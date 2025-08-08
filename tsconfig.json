@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
     // Language features and compatibility
-    "target": "ES2020",
-    "module": "ESNext",
-    "lib": ["dom", "es2022"], // Include DOM and ES2022 library features
+    "target": "ES2015",
+
+    // Module system used in the output, CommonJS for Node.js compatibility
+    "module": "CommonJS",
 
     // Strictness and type checking
     "strict": true, // Enable all strict type-checking options
@@ -24,9 +25,6 @@
     "experimentalDecorators": true, // Enable experimental decorators
     "emitDecoratorMetadata": true, // Emit metadata for decorated code
 
-    // JSX support
-    "jsx": "react-jsx", // Specify JSX mode for React
-
     // Build and output
     "incremental": true, // Enable incremental builds
     "importHelpers": true, // Use imported helpers instead of inlining
@@ -40,6 +38,9 @@
     "noUnusedParameters": true,
     "declaration": true
   },
+
+  // Include all files in the 'src' directory
+  "include": ["src/**/*"],
 
   // Directories to exclude from compilation
   "exclude": ["node_modules", "dist"]
