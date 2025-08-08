@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    // Language features and compatibility
+    "target": "ES2020",
+    "module": "ESNext",
+    "lib": ["dom", "es2022"], // Include DOM and ES2022 library features
+
+    // Strictness and type checking
+    "strict": true, // Enable all strict type-checking options
+    "noImplicitAny": true, // Disallow 'any' type unless explicitly specified
+    "allowUnusedLabels": false, // Prevent unused labels in code
+    "noFallthroughCasesInSwitch": true, // Prevent missing 'break' statements in switch cases
+    "skipLibCheck": true, // Skip type checking of .d.ts files for faster builds
+
+    // Module resolution and imports
+    "moduleResolution": "node", // Use Node.js style module resolution
+    "baseUrl": ".", // Base directory for resolving non-relative module names
+    "allowJs": true, // Allow JavaScript files to be compiled
+    "resolveJsonModule": true, // Allow JSON files to be imported
+    "esModuleInterop": true, // Enable compatibility for CommonJS and ES modules
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules without default exports
+
+    // Decorators and metadata
+    "experimentalDecorators": true, // Enable experimental decorators
+    "emitDecoratorMetadata": true, // Emit metadata for decorated code
+
+    // JSX support
+    "jsx": "react-jsx", // Specify JSX mode for React
+
+    // Build and output
+    "incremental": true, // Enable incremental builds
+    "importHelpers": true, // Use imported helpers instead of inlining
+    "outDir": "dist", // Specify output directory for compiled files
+    "sourceMap": true, // Generate source maps for debugging
+
+    // Additional TypeScript options
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "declaration": true
+  },
+
+  // Directories to exclude from compilation
+  "exclude": ["node_modules", "dist"]
+}

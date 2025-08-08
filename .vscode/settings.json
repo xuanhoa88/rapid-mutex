@@ -1,0 +1,98 @@
+{
+    // Editor settings
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "always"
+    },
+    "editor.detectIndentation": false,
+    "editor.renderWhitespace": "all",
+    "editor.tabSize": 2,
+
+    // ESLint validation for supported languages
+    "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "json",
+      "markdown",
+      "typescript",
+      "typescriptreact"
+    ],
+
+    // File type associations
+    "files.associations": {
+      ".eslintignore": "ignore",
+      ".eslintrc": "jsonc",
+      ".prettierrc": "jsonc",
+      "Dockerfile*": "dockerfile",
+      "__hash_table": "cpp",
+      "__split_buffer": "cpp",
+      "__tree": "cpp",
+      "array": "cpp",
+      "bitset": "cpp",
+      "deque": "cpp",
+      "initializer_list": "cpp",
+      "map": "cpp",
+      "queue": "cpp",
+      "set": "cpp",
+      "stack": "cpp",
+      "string": "cpp",
+      "string_view": "cpp",
+      "unordered_map": "cpp",
+      "unordered_set": "cpp",
+      "vector": "cpp"
+    },
+
+    "files.exclude": {
+      "**/.DS_Store": true,
+      "**/Thumbs.db": true
+    },
+
+    // Enable JavaScript and TypeScript validation
+    "javascript.format.enable": true,
+    "javascript.validate.enable": true,
+
+    // Prettier integration
+    "prettier.requireConfig": true,
+
+    // Search exclusions
+    "search.exclude": {
+      ".eslintcache": true,
+      ".git": true,
+      ".yarn": true,
+      "*.lock": true,
+      "*.{css,sass,scss}.d.ts": true,
+      "bower_components": true,
+      "node_modules": true,
+      "npm-debug.log.*": true,
+      "package-lock.json": true,
+      "**/.cache": true,
+      "**/.venv": true,
+      "**/__pycache__": true,
+      "**/__snapshots__": true,
+      "**/dist": true,
+      "**/coverage": true,
+      "**/out": true,
+      "**/packages": true,
+      "**/release": true
+    },
+
+    // Editor settings for JSON
+    "[json]": {
+      "editor.formatOnSave": true
+    },
+
+    // Editor settings for JavaScript
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    },
+
+    // Editor settings for TypeScript
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    },
+
+    // Enable TypeScript validation
+    "typescript.format.enable": true,
+    "typescript.validate.enable": true
+  }
